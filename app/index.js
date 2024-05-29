@@ -14,7 +14,6 @@ app.get('/admin', (req, res) => {res.sendFile(__dirname + '/pages/admin/admin.ht
 app.get('/api/register', authentication.register);
 app.get('/api/register', authentication.login);
 
-
 const puerto = process.env.PORT || 3000;
 app.listen(puerto, () => {
   console.log(`escuchando en puerto ${puerto}`)
